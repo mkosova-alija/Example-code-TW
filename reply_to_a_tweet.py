@@ -9,6 +9,6 @@ client = tweepy.Client(consumer_key='ADD_YOUR_KEY_HERE',
                        access_token_secret='ADD_YOUR_TOKEN_SECRET_HERE')
 
 # with the help of client.create_tweet methot it is possible to create a tweet. The text parameter is the content of the tweet, in that you pass string as a tweet content.
-response = client.create_tweet(text='Testing Tweepy functionalities')
+response = client.create_tweet (text='Testing a reply', in_reply_to_tweet_id=ADD_HERE-TWEET_ID)
 #print your tweet to make sure it workds
 print(response)
